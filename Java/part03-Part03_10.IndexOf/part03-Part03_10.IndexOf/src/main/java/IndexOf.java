@@ -21,12 +21,12 @@ public class IndexOf {
         System.out.print("Search for? ");
         int searchValue = scanner.nextInt();
 
-        boolean found = false;
+       
         System.out.print(searchValue + " is at index");
         for (int i = 0; i < numbers.size(); i++) {
             if (numbers.get(i) == searchValue) {
                 System.out.print(" " + i);
-                found = true;
+
             }
         }
 
