@@ -2,7 +2,7 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class SumOfAList {
+public class AverageOfAList {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -18,11 +18,12 @@ public class SumOfAList {
             numbers.add(input);
         }
 
-        int sum = 0;
+        double sum = 0;
         for (int number : numbers) {
             sum += number;
         }
+        double average = sum / numbers.size();
 
-        System.out.println("Sum: " + sum);
+        System.out.println("Average: " + average);
     }
 }
