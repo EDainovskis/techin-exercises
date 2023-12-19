@@ -29,7 +29,6 @@ public class Main {
         System.out.println();
         for (TelevisionProgram program : programs) {
             if (program.getDuration() <= maxDuration) {
-                System.out.print(program.isAwesome() ? "[Awesome] " : "");
                 System.out.println(program);
             }
         }
