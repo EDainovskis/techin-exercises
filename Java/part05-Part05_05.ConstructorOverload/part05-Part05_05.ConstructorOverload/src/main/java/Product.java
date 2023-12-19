@@ -19,7 +19,7 @@ public class Product {
         this(name, "shelf", weight);
     }
 
-    
+
     public Product(String name, String location, int weight) {
         this.name = name;
         this.location = location;
