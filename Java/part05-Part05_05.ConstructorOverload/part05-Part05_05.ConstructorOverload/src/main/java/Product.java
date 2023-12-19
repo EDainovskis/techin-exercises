@@ -6,26 +6,20 @@ public class Product {
 
 
     public Product(String name) {
-        this.name = name;
-        this.location = "shelf";
-        this.weight = 1;
+        this(name, "shelf", 1);
     }
 
 
     public Product(String name, String location) {
-        this.name = name;
-        this.location = location;
-        this.weight = 1;
+        this(name, location, 1);
     }
 
 
     public Product(String name, int weight) {
-        this.name = name;
-        this.location = "shelf";
-        this.weight = weight;
+        this(name, "shelf", weight);
     }
 
-gut 
+    
     public Product(String name, String location, int weight) {
         this.name = name;
         this.location = location;
