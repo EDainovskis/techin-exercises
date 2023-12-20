@@ -17,8 +17,8 @@ public class PaymentCard {
         if (this.balance >= amount) {
             this.balance -= amount;
             return true;
-        } else {
-            return false;
         }
+
+        return false;
     }
 }

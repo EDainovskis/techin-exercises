@@ -4,56 +4,43 @@ public class PaymentTerminal {
     private int heartyMeals;
 
     public PaymentTerminal() {
-
         this.money = 1000.0;
     }
 
     public double eatAffordably(double payment) {
-
         double affordableMealPrice = 2.50;
 
         if (payment >= affordableMealPrice) {
             this.money += affordableMealPrice;
             this.affordableMeals++;
             return payment - affordableMealPrice;
-        } else {
-            return payment;
         }
+
+        return payment;
     }
 
     public double eatHeartily(double payment) {
-
         double heartyMealPrice = 4.30;
 
         if (payment >= heartyMealPrice) {
             this.money += heartyMealPrice;
             this.heartyMeals++;
             return payment - heartyMealPrice;
-        } else {
-            return payment;
         }
+
+        return payment;
     }
 
     public boolean eatAffordably(PaymentCard card) {
         double affordableMealPrice = 2.50;
 
-        if (card.takeMoney(affordableMealPrice)) {
-            this.affordableMeals++;
-            return true;
-        } else {
-            return false;
-        }
+        return card.takeMoney(affordableMealPrice) && (++this.affordableMeals > 0);
     }
 
     public boolean eatHeartily(PaymentCard card) {
         double heartyMealPrice = 4.30;
 
-        if (card.takeMoney(heartyMealPrice)) {
-            this.heartyMeals++;
-            return true;
-        } else {
-            return false;
-        }
+        return card.takeMoney(heartyMealPrice) && (++this.heartyMeals > 0);
     }
 
     public void addMoneyToCard(PaymentCard card, double sum) {
