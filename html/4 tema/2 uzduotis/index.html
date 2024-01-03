@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>HTML5 Patterns Examples</title>
+    <script>
+      function validateColor() {
+        var colorInput = document.getElementById("favoriteColor");
+        if (colorInput.value === "") {
+          alert("Please select a color");
+          return false;
+        }
+        return true;
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Užpildykite formą</h1>
+    <p><b>Visi laukai privalomi</b></p>
+    <form action="#" method="post" onsubmit="return validateColor()">
+      <p>Vardas iš didžiosios raidės:</p>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        pattern="[A-Z][a-zA-Z]*"
+        title="Įveskite vardą iš didžiosios raidės"
+        required
+      />
+
+      <p>Telefono numeris:</p>
+      <input
+        type="text"
+        name="phoneNumber"
+        pattern="[0-9]+"
+        title="Įveskite telefono numerį"
+        required
+      />
+
+      <p>El.pašto adresas:</p>
+      <input
+        type="email"
+        name="email"
+        pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+        title="Įveskite el.pašto adresą"
+        required
+      />
+
+      <p>Jūsų mėgstamiausios internetinės svetainės adresas:</p>
+      <input type="url" name="website" title="Įveskite tinklapio adresą" />
+
+      <p>Jūsų gimimo data:</p>
+      <input
+        type="date"
+        name="birthdate"
+        title="Įveskite savo gimimo datą"
+        required
+      />
+
+      <p>Jūsų amžius:</p>
+      <input
+        type="number"
+        name="age"
+        min="18"
+        max="65"
+        title="Įveskite savo amžių nuo 18 iki 65"
+        required
+      />
+
+      <p>Jūsų pašto kodas (pvz., LT12345):</p>
+      <input
+        type="text"
+        name="postalCode"
+        pattern="[A-Z]{2}\d{5}"
+        title="Įveskite du skaitmenis ir penkis skaitmenis"
+        required
+      />
+
+      <p>Jūsų mėgstamiausia spalva:</p>
+      <input type="color" name="favoriteColor" />
+
+      <br />
+      <br />
+      <input type="submit" value="Pateikti" />
+    </form>
+  </body>
+</html>
