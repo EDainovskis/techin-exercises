@@ -3,16 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <title>HTML5 Patterns Examples</title>
-    <script>
-      function validateColor() {
-        var colorInput = document.getElementById("favoriteColor");
-        if (colorInput.value === "") {
-          alert("Please select a color");
-          return false;
-        }
-        return true;
-      }
-    </script>
   </head>
   <body>
     <h1>Užpildykite formą</h1>
@@ -23,8 +13,9 @@
         type="text"
         name="name"
         id="name"
-        pattern="[A-Z][a-zA-Z]*"
+        pattern="[A-Z][a-z]*"
         title="Įveskite vardą iš didžiosios raidės"
+        placeholder="Vardas"
         required
       />
 
@@ -34,6 +25,7 @@
         name="phoneNumber"
         pattern="[0-9]+"
         title="Įveskite telefono numerį"
+        placeholder="Telefono numeris"
         required
       />
 
@@ -43,17 +35,24 @@
         name="email"
         pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
         title="Įveskite el.pašto adresą"
+        placeholder="El pašto adresas"
         required
       />
 
       <p>Jūsų mėgstamiausios internetinės svetainės adresas:</p>
-      <input type="url" name="website" title="Įveskite tinklapio adresą" />
+      <input
+        type="url"
+        name="website"
+        title="Įveskite tinklapio adresą"
+        placeholder="Svetainės adresas"
+      />
 
       <p>Jūsų gimimo data:</p>
       <input
         type="date"
         name="birthdate"
         title="Įveskite savo gimimo datą"
+        placeholder="Gimimo data"
         required
       />
 
@@ -64,6 +63,7 @@
         min="18"
         max="65"
         title="Įveskite savo amžių nuo 18 iki 65"
+        placeholder="Amžius"
         required
       />
 
@@ -73,6 +73,7 @@
         name="postalCode"
         pattern="[A-Z]{2}\d{5}"
         title="Įveskite du skaitmenis ir penkis skaitmenis"
+        placeholder="Pašto kodas"
         required
       />
 
