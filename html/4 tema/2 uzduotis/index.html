@@ -23,9 +23,9 @@
       <input
         type="text"
         name="phoneNumber"
-        pattern="[0-9]+"
-        title="Įveskite telefono numerį"
-        placeholder="Telefono numeris"
+        pattern="\+[0-9]{3}-[0-9]{3}-[0-9]{5}"
+        title="Įveskite telefono numerį (pvz., +123-456-78901)"
+        placeholder="+xxx-xxx-xxxxx"
         required
       />
 
@@ -33,7 +33,6 @@
       <input
         type="email"
         name="email"
-        pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
         title="Įveskite el.pašto adresą"
         placeholder="El pašto adresas"
         required
