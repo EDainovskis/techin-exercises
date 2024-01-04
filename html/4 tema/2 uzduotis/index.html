@@ -8,7 +8,9 @@
     <h1>Užpildykite formą</h1>
     <p><b>Visi laukai privalomi</b></p>
     <form action="#" method="post" onsubmit="return validateColor()">
-      <p>Vardas iš didžiosios raidės:</p>
+      <label>Vardas iš didžiosios raidės:</label>
+      <br />
+
       <input
         type="text"
         name="name"
@@ -18,8 +20,11 @@
         placeholder="Vardas"
         required
       />
+      <br />
+      <br />
 
-      <p>Telefono numeris:</p>
+      <label>Telefono numeris:</label>
+      <br />
       <input
         type="text"
         name="phoneNumber"
@@ -28,8 +33,11 @@
         placeholder="+xxx-xxx-xxxxx"
         required
       />
+      <br />
+      <br />
 
-      <p>El.pašto adresas:</p>
+      <label>El.pašto adresas:</label>
+      <br />
       <input
         type="email"
         name="email"
@@ -37,16 +45,21 @@
         placeholder="El pašto adresas"
         required
       />
+      <br /><br />
 
-      <p>Jūsų mėgstamiausios internetinės svetainės adresas:</p>
+      <label>Jūsų mėgstamiausios internetinės svetainės adresas:</label>
+      <br />
       <input
         type="url"
         name="website"
         title="Įveskite tinklapio adresą"
         placeholder="Svetainės adresas"
       />
+      <br />
+      <br />
 
-      <p>Jūsų gimimo data:</p>
+      <label>Jūsų gimimo data:</label>
+      <br />
       <input
         type="date"
         name="birthdate"
@@ -54,8 +67,11 @@
         placeholder="Gimimo data"
         required
       />
+      <br />
+      <br />
 
-      <p>Jūsų amžius:</p>
+      <label>Jūsų amžius:</label>
+      <br />
       <input
         type="number"
         name="age"
@@ -65,18 +81,24 @@
         placeholder="Amžius"
         required
       />
+      <br />
+      <br />
 
-      <p>Jūsų pašto kodas (pvz., LT12345):</p>
+      <label>Jūsų pašto kodas (pvz., LT-12345):</label>
+      <br />
       <input
         type="text"
         name="postalCode"
-        pattern="[A-Z]{2}\d{5}"
+        pattern="[A-Z]-{2}\d{5}"
         title="Įveskite du skaitmenis ir penkis skaitmenis"
         placeholder="Pašto kodas"
         required
       />
+      <br />
+      <br />
 
-      <p>Jūsų mėgstamiausia spalva:</p>
+      <label>Jūsų mėgstamiausia spalva:</label>
+      <br />
       <input type="color" name="favoriteColor" />
 
       <br />

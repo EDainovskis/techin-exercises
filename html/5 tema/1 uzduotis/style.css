@@ -1,0 +1,37 @@
+body {
+  color: lightgray;
+}
+h1 {
+  color: purple;
+}
+h2,
+h3 {
+  color: orange;
+}
+
+div p {
+  font-size: 25px;
+}
+.hello {
+  background-color: white;
+}
+
+#special {
+  border: 2px solid blue;
+}
+#special2 {
+  border: 2px solid red;
+}
+
+div ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+div ul > li {
+  color: darkblue;
+}
+
+div ul ul > li {
+  color: purple;
+}
