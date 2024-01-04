@@ -1,0 +1,143 @@
+/*****************************************************
+
+    Numatytųjų naršyklės stiliaus taisyklių perrašymas 
+
+******************************************************/
+
+* {
+  margin: 0;
+}
+
+body {
+  font-family: "Questrial", sans-serif;
+  font-size: 12pt;
+}
+
+.description {
+  background-color: #f3f3f3;
+}
+
+.container {
+  padding: 30px 10px;
+}
+
+header {
+  background-color: #16a085;
+  color: white;
+}
+
+header h1 {
+  text-transform: uppercase;
+  padding: 20px 0;
+}
+
+header h3 {
+  letter-spacing: 0.3em;
+}
+header nav {
+  border-top: 2px dashed white;
+  padding-top: 20px;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+}
+
+header ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+}
+
+header li {
+  margin-right: 10px;
+}
+
+header nav li {
+  display: inline-block;
+  width: 150px;
+}
+
+header a:link {
+  color: white;
+  text-decoration: none;
+}
+
+header a:visited {
+  color: white;
+}
+
+header a:hover {
+  color: White;
+  text-decoration: underline;
+}
+
+header a:active {
+  color: gray;
+}
+
+article h3 {
+  text-transform: uppercase;
+  color: #16a085;
+  letter-spacing: 0.3em;
+}
+
+/* <ul>, esančio <article>:
+    ženklinto sąrašo stilius: kvadratas;
+*/
+article ul {
+  list-style-type: square;
+}
+
+/* <ol>, esančio <article>:
+    numeracijos stilius: mažosios romėniškos raidės;
+    eilutės aukštis: 2;
+*/
+article ol {
+  list-style-type: lower-roman;
+  line-height: 2;
+}
+/* pirmoji <section>, esanti <main> dalyje:
+    teksto lygiavimas: centruotas (center);
+*/
+main section:first-child {
+  text-align: center;
+}
+
+/* paveiklas:
+    rėmelis: 1px solid #16A085;
+*/
+
+img {
+  border: 1px solid #16a085;
+}
+
+/**************************************
+
+    Tinklapio baigiamoji dalis | footer
+
+***************************************/
+
+/* <footer> dalys:
+    teksto lygiavimas: centruotas;
+    fono spalva: #16A085;
+*/
+footer {
+  text-align: center;
+  background-color: #16a085;
+}
+/* nuorodos, esančio <footer>:
+    teksto pabraukimo nėra;
+    teksto spalva: balta;
+*/
+footer a {
+  text-decoration: none;
+  color: white;
+}
+/* <h5>, esančio <footer> dalyje:
+    viršutinės vidinė paraštė: 20px;
+*/
+footer h5 {
+  padding-top: 20px;
+}
