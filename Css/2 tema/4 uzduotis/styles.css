@@ -1,0 +1,9 @@
+li:nth-child(4n + 3) {
+  color: red;
+}
+
+/* Hover color change starting from the third line and every fourth */
+li:nth-child(3n + 2):hover {
+  background-color: #3498db;
+  color: white;
+}
