@@ -1,0 +1,28 @@
+h1 {
+  color: navy;
+}
+
+.content {
+  width: 70%;
+  margin: 0 auto;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+p:nth-child(odd) {
+  background-color: #f0f0f0;
+}
+
+p:nth-child(even) {
+  background-color: #e0e0e0;
+}
+
+p:nth-child(3n) {
+  font-weight: bold;
+}
+
+p:hover {
+  color: red;
+}
