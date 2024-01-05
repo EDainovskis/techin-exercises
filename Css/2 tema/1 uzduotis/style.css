@@ -1,0 +1,23 @@
+.container {
+  width: 500px;
+  border: 2px solid black;
+  padding: 2em;
+  margin: 5em auto;
+}
+
+li {
+  position: relative;
+  cursor: pointer;
+  padding: 10px;
+
+  list-style-type: none;
+  text-decoration: none;
+}
+
+li::before {
+  content: "\2606";
+  color: rgb(186, 186, 186);
+  font-size: 1.5em;
+  position: absolute;
+  left: -1.5em;
+}
