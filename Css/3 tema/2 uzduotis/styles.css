@@ -1,0 +1,65 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #ccb363;
+}
+
+.card {
+  width: 300px;
+  text-align: center;
+  background-color: #fff;
+  border: 2px solid #cfd8de;
+  border-radius: 0px;
+  overflow: hidden;
+  box-shadow: 5px 5px 0px rgba(0, 0, 1, 1);
+}
+
+.title {
+  background-color: #fefefe;
+  color: #080606;
+  padding: 10px;
+  font-size: 18px;
+  text-align: left;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.interesting-fact,
+.common-traits,
+.description {
+  padding: 10px;
+  font-size: 14px;
+}
+
+.interesting-fact,
+.common-traits {
+  font-weight: bold;
+}
+
+.interesting-fact {
+  background-color: #ecf0f1;
+}
+
+.common-traits {
+  background-color: #d4e6f1;
+}
+
+.inteligent {
+  font-style: italic;
+}
+
+.feathers {
+  font-style: italic;
+}
+
+.description {
+  background-color: #ecf0f1;
+}
