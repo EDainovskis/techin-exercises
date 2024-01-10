@@ -13,6 +13,18 @@ body {
   height: 100vh;
 }
 
+.nuotrauku-blokas .fonas.fono-dydis-auto {
+  background-size: auto;
+}
+
+.nuotrauku-blokas .fonas.fono-dydis-cover {
+  background-size: cover;
+}
+
+.nuotrauku-blokas .fonas.fono-dydis-contain {
+  background-size: contain;
+}
+
 .nuotrauku-blokas .fonas {
   width: 100%;
   height: 100%;

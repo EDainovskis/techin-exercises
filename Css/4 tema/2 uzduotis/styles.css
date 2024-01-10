@@ -1,0 +1,75 @@
+.button {
+  padding: 1em;
+}
+.button--blue {
+  background-color: #3498db;
+}
+
+.button--green {
+  background-color: #4caf50;
+}
+
+.button--teal {
+  background-color: #bde5ff;
+}
+
+.button--orange {
+  background-color: #db7f34;
+}
+
+.button--red {
+  background-color: #ff4d4d;
+}
+
+.button--background-color {
+  background-color: #db7f34;
+  border: 2px solid #3498db;
+}
+
+.button--rounded {
+  border-radius: 20px;
+}
+.button--rounded-sligtly {
+  border-radius: 10px;
+}
+.button--transparent {
+  background-clip: text;
+  -webkit-background-clip: text;
+  border: 2px solid;
+}
+.blue--border {
+  border-color: #3498db;
+}
+.green--border {
+  border-color: green;
+}
+
+.teal--border {
+  border-color: teal;
+}
+.orange--border {
+  border-color: orange;
+}
+
+.red--border {
+  border-color: red;
+}
+.btn__text--transparent {
+  color: transparent;
+}
+
+.background--linear-blue {
+  background: linear-gradient(#0c19d3, #86b3d1);
+}
+.background--linear-green {
+  background: linear-gradient(green, rgb(64, 83, 64));
+}
+.background--linear-teal {
+  background: linear-gradient(teal, rgb(82, 104, 104));
+}
+.background--linear-orange {
+  background: linear-gradient(orange, rgb(71, 63, 48));
+}
+.background--linear-red {
+  background: linear-gradient(red, rgb(139, 109, 109));
+}

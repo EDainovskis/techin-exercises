@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #cccccc;
+}
+
+.container {
+  overflow: hidden;
+}
+
+.box {
+  box-sizing: border-box;
+  width: calc(33.33% - 40px);
+  float: left;
+  padding: 20px;
+  margin: 20px;
+  background-color: #333333;
+  border: 2px solid #333;
+  border-radius: 0px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: white;
+}
+
+.box p {
+  margin: 0;
+  line-height: 1.5;
+}
