@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Absolute Positioning</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      .container {
+        position: relative;
+        height: 100vh;
+      }
+
+      .box {
+        position: absolute;
+        width: 100px;
+        height: 200px;
+        border: 2px solid #333;
+        box-sizing: border-box;
+        text-align: center;
+        padding: 10px;
+      }
+
+      .box1 {
+        top: 50px;
+        left: 50px;
+      }
+
+      .box2 {
+        top: 50px;
+        left: 200px;
+      }
+
+      .box3 {
+        top: 50px;
+        left: 350px;
+      }
+
+      .box4 {
+        top: 50px;
+        left: 500px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="box box1">
+        Box 1<br />Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        quasi quibu
+      </div>
+      <div class="box box2">
+        Box 2<br />Nisi corporis unde laborum beatae rerum aliquam sdam et
+        doloremque
+      </div>
+      <div class="box box3">
+        Box 3<br />impedit enim at tempora voluptatum? Aperiam dolorum
+      </div>
+      <div class="box box4">Box 4<br />placeat, cum quidem voluptates?1</div>
+    </div>
+  </body>
+</html>
