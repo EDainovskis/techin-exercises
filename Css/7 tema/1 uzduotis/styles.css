@@ -12,11 +12,62 @@ body {
   margin: 100px auto;
 }
 
-.square {
+.square.A {
   background-color: #efc1c0;
   color: #fff;
   text-align: left;
   padding: 20px;
   font-size: 24px;
   border-radius: 5px;
+  order: 2;
+}
+
+.square.B {
+  background-color: #efc1c0;
+  color: #fff;
+  text-align: left;
+  padding: 20px;
+  font-size: 24px;
+  border-radius: 5px;
+  order: 5;
+}
+
+.square.C {
+  background-color: #efc1c0;
+  color: #fff;
+  text-align: left;
+  padding: 20px;
+  font-size: 24px;
+  border-radius: 5px;
+  order: 6;
+}
+
+.square.D {
+  background-color: #efc1c0;
+  color: #fff;
+  text-align: left;
+  padding: 20px;
+  font-size: 24px;
+  border-radius: 5px;
+  order: 1;
+}
+
+.square.E {
+  background-color: #efc1c0;
+  color: #fff;
+  text-align: left;
+  padding: 20px;
+  font-size: 24px;
+  border-radius: 5px;
+  order: 4;
+}
+
+.square.F {
+  background-color: #efc1c0;
+  color: #fff;
+  text-align: left;
+  padding: 20px;
+  font-size: 24px;
+  border-radius: 5px;
+  order: 3;
 }
