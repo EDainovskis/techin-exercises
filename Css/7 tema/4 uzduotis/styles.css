@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  grid-template-rows: 100px 200px 300px 100px;
+  gap: 10px;
+  width: 80%;
+  margin: 50px auto;
+  text-align: left;
+}
+
+.square {
+  background-color: #a9e8dc;
+  color: black;
+  padding: 20px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.square.A {
+  grid-column: span 1;
+  grid-row: span 1;
+  height: 160px;
+  background-color: #eef4f2;
+  color: rgb(0, 0, 0);
+  text-align: left;
+}
+
+.square.B {
+  grid-column: span 3;
+  grid-row: span 1;
+  height: 160px;
+  background-color: #cdd6d5;
+  color: rgb(0, 0, 0);
+  text-align: left;
+}
+
+.square.C {
+  grid-column: span 3;
+  grid-row: span 1;
+  height: 250px;
+  background-color: #cdd6d5;
+  color: rgb(20, 18, 18);
+  text-align: left;
+}
+
+.square.D {
+  grid-column: span 1;
+  grid-row: span 1;
+  height: 250px;
+  background-color: #eef4f2;
+  color: rgb(0, 0, 0);
+  text-align: left;
+}
+
+.square.header {
+  grid-column: span 4;
+  grid-row: span 1;
+  background-color: #415b76;
+  color: white;
+  text-align: left;
+}
+
+.square.footer {
+  grid-column: span 4;
+  grid-row: span 1;
+  background-color: #415b76;
+  color: white;
+  text-align: left;
+}
+
+@media only screen and (max-width: 500px) {
+  .square.header {
+    grid-column: span 4;
+  }
+  .square.A {
+    grid-column: span 4;
+  }
+  .square.B {
+    grid-column: span 4;
+  }
+  .square.C {
+    grid-column: span 4;
+  }
+  .square.D {
+    grid-column: span 4;
+  }
+  .square.footer {
+    grid-column: span 4;
+  }
+}
