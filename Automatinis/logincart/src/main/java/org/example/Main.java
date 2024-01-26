@@ -40,6 +40,7 @@ public class Main {
         WebElement loginButton2 = driver.findElement(By.cssSelector("#content > div > div:nth-child(2) > div > form > input"));
         loginButton2.click();
 
+
         assertTrue(true, "Login should be successful");
     }
 
