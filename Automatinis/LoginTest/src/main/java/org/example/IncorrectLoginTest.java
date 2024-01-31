@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class Main {
+public class IncorrectLoginTest {
 
     private static WebDriver driver;
 
@@ -16,20 +16,18 @@ public class Main {
     }
 
     @Test
-    void testLogin() {
+    void testIncorrectLogin() {
         driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 
         LoginPage loginPage = new LoginPage(driver);
 
-        String usernameText = loginPage.getUsernameText();
-        String passwordText = loginPage.getPasswordText();
 
-        System.out.println("Username: " + usernameText);
-        System.out.println("Password: " + passwordText);
+        String incorrectUsername = "incorrectUsername";
+        String incorrectPassword = "incorrectPassword";
 
-        loginPage.enterUsernameAndPassword(usernameText, passwordText);
+        loginPage.enterUsernameAndPassword(incorrectUsername, incorrectPassword);
         loginPage.clickLoginButton();
 
-        // Continue with your login actions and assertions
+
     }
 }
