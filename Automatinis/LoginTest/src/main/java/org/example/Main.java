@@ -1,4 +1,5 @@
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebDriver;
@@ -30,6 +31,11 @@ public class Main {
         loginPage.enterUsernameAndPassword(usernameText, passwordText);
         loginPage.clickLoginButton();
 
-        // Continue with your login actions and assertions
+
+        String expectedDashboardUrl = "https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index";
+        String actualUrl = driver.getCurrentUrl();
+        Assertions.assertEquals(expectedDashboardUrl, actualUrl, "Login failed: Dashboard page not reached");
+
+
     }
 }
