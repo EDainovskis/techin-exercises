@@ -1,0 +1,19 @@
+name: GitHub Actions Demo
+
+on: push
+env:
+  BASED_URI: "https://jsonplaceholder.typicode.com"
+  TOKEN: ${{ secrets.TOKEN }}
+jobs:
+  automated-api-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install Postman CLI
+        run: |
+          curl -o- "https://dl-cli.pstmn.io/install/linux64.sh" | sh
+      - name: Login to Postman CLI
+        run: postman login --with-api-key ${{ secrets.POSTMAN_API_KEY }}
+      - name: Run API tests
+        run: |
+          postman collection run "32801028-519911d3-9437-4f89-9366-052635c80b91 -e 32801028-e1a52724-1df4-4ecd-b18c-73db7a5e94a2"
